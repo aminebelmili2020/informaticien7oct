@@ -1,13 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 *{
     direction: rtl;
     margin: 0;
     padding: 0;
+    
     font-family: "Amiri Quran", serif;
     font-weight: 400;
     font-style: normal;
 }
-h1{
+body{
+    background-image: url('../media/GradientMap2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.filterColorBG{
+    background-image: linear-gradient(#310964, #04091a);
+    width: 100vw;
+    height: 100vh;
+    opacity: 85%;
+    position: fixed;
+}
+.container{
+    position: relative;
+    z-index: 1;
+}
+h1, h5{
     text-align: center;
+    color: white;
+}
+
+.Contact{
+    color: whitesmoke;
+    width: 370px;
+    height: 330px;
+    margin: 20px auto;
+    text-align: center;
+}
+.Contact > h2{
+    font-family: "Amiri";
+}
+.glass{
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 3px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+
+}
+.content{
+    margin-top: 20px;
 }
